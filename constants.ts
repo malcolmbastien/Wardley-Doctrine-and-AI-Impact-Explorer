@@ -1,4 +1,3 @@
-
 import { DoctrinePattern, Phase, Score } from './types';
 
 export const doctrineData: DoctrinePattern[] = [
@@ -384,3 +383,46 @@ export const PHASES: Phase[] = [
 ];
 
 export const SCORES_TO_TRACK: Score[] = [3, 4, 5];
+
+export const patternIcons: Record<string, string> = {
+    "Know your users": "👥",
+    "Challenge assumptions": "🤔",
+    "Use appropriate methods": "🛠️",
+    "Use a systematic mechanism of learning": "🔄",
+    "Focus on user needs": "🎯",
+    "Focus on high situational awareness": "🗺️",
+    "Remove bias and duplication": "✂️",
+    "Use a common language": "🗣️",
+    "Think small (as in know the details)": "🔍",
+    "Be transparent": "👁️",
+    "Focus on the outcome, not a contract": "🏆",
+    "Think aptitude and attitude": "🧠",
+    "Strategy is iterative, not linear": "🔁",
+    "Move fast": "⚡️",
+    "Use appropriate tools": "🔧",
+    "Think small (as in teams)": "🧑‍🤝‍🧑",
+    "A bias towards action": "🚀",
+    "Be pragmatic": "👍",
+    "Manage Inertia": "⚓",
+    "Use standards where appropriate": "📜",
+    "Distribute power and decision making": "🤝",
+    "Think Fast, Inexpensive, Restrained, and Elegant (FIRE)": "🔥",
+    "Effectiveness over efficiency": "✅",
+    "Manage failure": "🛡️",
+    "Provide purpose, mastery & autonomy": "🧭",
+    "Do better with less": "🌱",
+    "Be the owner": "🔑",
+    "Set exceptional standards": "🌟",
+    "Optimise Flow": "🌊",
+    "Strategy is complex": "🕸️",
+    "Commit to the direction, be adaptive along the path": "🗺️",
+    "A bias towards the new": "💡",
+    "Be humble": "🙏",
+    "Think Big": "🔭",
+    "Seek the best": "🥇",
+    "Exploit the landscape": "⛰️",
+    "Design for constant evolution": "🧬",
+    "There is no core": "💥",
+    "Listen to your ecosystems": "📡",
+    "There is no one culture": "🌍",
+};

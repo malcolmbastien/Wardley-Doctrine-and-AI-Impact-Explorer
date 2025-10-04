@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { DoctrinePattern } from '../types';
-import { scoreColorsClasses, scoreNames, scoreShortNames, phaseShortNames } from '../constants';
+import { scoreColorsClasses, scoreNames, scoreShortNames, phaseShortNames, patternIcons } from '../constants';
 import ImpactIcon from './ImpactIcon';
 
 interface PatternCardProps {
@@ -30,7 +29,12 @@ const PatternCard: React.FC<PatternCardProps> = ({ pattern }) => {
                             {scoreShortNames[score] || "Unknown"}
                         </div>
                     </div>
-                    <h3 className="pattern-title text-xl font-bold text-gray-800">{pattern.pattern}</h3>
+                    <h3 className="pattern-title text-xl font-bold text-gray-800 flex items-center gap-3">
+                        {patternIcons[pattern.pattern] && (
+                            <span className="text-2xl flex-shrink-0" aria-hidden="true">{patternIcons[pattern.pattern]}</span>
+                        )}
+                        <span>{pattern.pattern}</span>
+                    </h3>
                 </div>
                 <p className="pattern-description mt-3 text-gray-600">{pattern.description}</p>
             </div>
