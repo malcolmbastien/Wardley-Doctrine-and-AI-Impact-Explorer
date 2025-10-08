@@ -6,15 +6,15 @@ import ImpactIcon from './ImpactIcon';
 const scoreDetails = {
     5: {
         title: 'Cultural & Strategic Pivot',
-        description: 'These patterns demand the most profound transformation, focusing on **shifting fundamental beliefs, redefining mastery (away from coding), resetting strategic ambition**, or changing the organization\'s tolerance for risk and failure.'
+        description: 'These principles demand the most profound transformation, focusing on **shifting fundamental beliefs, redefining mastery (away from coding), resetting strategic ambition**, or changing the organization\'s tolerance for risk and failure.'
     },
     4: {
         title: 'Organizational Re-engineering',
-        description: 'These patterns require deeper change in **organizational structure, key performance indicators (KPIs), governance models, and accountability protocols** to align human activity with AI velocity.'
+        description: 'These principles require deeper change in **organizational structure, key performance indicators (KPIs), governance models, and accountability protocols** to align human activity with AI velocity.'
     },
     3: {
         title: 'Technical & Process Optimization',
-        description: 'These patterns focus on **implementing new tools, defining clear prompt standards, and establishing fast guardrails** to capture immediate AI-driven efficiency gains within existing structures.'
+        description: 'These principles focus on **implementing new tools, defining clear prompt standards, and establishing fast guardrails** to capture immediate AI-driven efficiency gains within existing structures.'
     }
 };
 

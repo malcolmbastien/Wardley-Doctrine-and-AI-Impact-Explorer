@@ -1,14 +1,14 @@
 import React from 'react';
-import { DoctrinePattern } from '../types';
-import { scoreColorsClasses, scoreNames, scoreShortNames, phaseShortNames, patternIcons } from '../constants';
+import { DoctrinePrinciple } from '../types';
+import { scoreColorsClasses, scoreNames, scoreShortNames, phaseShortNames, principleIcons } from '../constants';
 import ImpactIcon from './ImpactIcon';
 
-interface PatternCardProps {
-    pattern: DoctrinePattern;
+interface PrincipleCardProps {
+    principle: DoctrinePrinciple;
 }
 
-const PatternCard: React.FC<PatternCardProps> = ({ pattern }) => {
-    const score = pattern.score || 3;
+const PrincipleCard: React.FC<PrincipleCardProps> = ({ principle }) => {
+    const score = principle.score || 3;
     const colorClasses = scoreColorsClasses[score] || scoreColorsClasses[3];
 
     const createMarkup = (text: string) => {
@@ -20,7 +20,7 @@ const PatternCard: React.FC<PatternCardProps> = ({ pattern }) => {
             <div className="card-header p-6 hover:bg-gray-50">
                 <div className="flex flex-col gap-2">
                     <div className="flex justify-between items-center gap-4">
-                        <p className="phase-tag text-xs font-semibold uppercase tracking-wider text-indigo-600">{phaseShortNames[pattern.phase] || pattern.phase}</p>
+                        <p className="phase-tag text-xs font-semibold uppercase tracking-wider text-indigo-600">{phaseShortNames[principle.phase] || principle.phase}</p>
                         <div 
                             className={`strategic-focus-tag flex-shrink-0 px-3 py-1 text-xs font-bold rounded-full shadow-md flex items-center ${colorClasses.tagBg} ${colorClasses.tagText}`}
                             title={scoreNames[score] || "Unknown Focus Level"}
@@ -29,25 +29,25 @@ const PatternCard: React.FC<PatternCardProps> = ({ pattern }) => {
                             {scoreShortNames[score] || "Unknown"}
                         </div>
                     </div>
-                    <h3 className="pattern-title text-xl font-bold text-gray-800 flex items-center gap-3">
-                        {patternIcons[pattern.pattern] && (
-                            <span className="text-2xl flex-shrink-0" aria-hidden="true">{patternIcons[pattern.pattern]}</span>
+                    <h3 className="principle-title text-xl font-bold text-gray-800 flex items-center gap-3">
+                        {principleIcons[principle.principle] && (
+                            <span className="text-2xl flex-shrink-0" aria-hidden="true">{principleIcons[principle.principle]}</span>
                         )}
-                        <span>{pattern.pattern}</span>
+                        <span>{principle.principle}</span>
                     </h3>
                 </div>
-                <p className="pattern-description mt-3 text-gray-600">{pattern.description}</p>
+                <p className="principle-description mt-3 text-gray-600">{principle.description}</p>
             </div>
             <div className="px-6 pb-6">
                 <div className="border-t border-gray-200 pt-4 space-y-4">
                     <div>
                         <h4 className="font-semibold text-gray-700 mb-2">The Impact of AI</h4>
-                        <p className="explanation-text text-gray-600 text-sm" dangerouslySetInnerHTML={createMarkup(pattern.explanation)}></p>
+                        <p className="explanation-text text-gray-600 text-sm" dangerouslySetInnerHTML={createMarkup(principle.explanation)}></p>
                     </div>
-                    {pattern.recommendation && (
+                    {principle.recommendation && (
                          <div>
                             <h4 className="font-semibold text-gray-700 mb-2">Recommendations for Managers</h4>
-                            <p className="recommendation-text text-gray-600 text-sm" dangerouslySetInnerHTML={createMarkup(pattern.recommendation)}></p>
+                            <p className="recommendation-text text-gray-600 text-sm" dangerouslySetInnerHTML={createMarkup(principle.recommendation)}></p>
                         </div>
                     )}
                 </div>
@@ -56,4 +56,4 @@ const PatternCard: React.FC<PatternCardProps> = ({ pattern }) => {
     );
 };
 
-export default PatternCard;
+export default PrincipleCard;

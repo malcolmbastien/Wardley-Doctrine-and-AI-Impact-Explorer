@@ -1,11 +1,11 @@
 
 import React, { useMemo } from 'react';
-import { DoctrinePattern, Phase, Score } from '../types';
+import { DoctrinePrinciple, Phase, Score } from '../types';
 import { scoreColorsClasses, scoreShortNames, phaseShortNames, PHASES, SCORES_TO_TRACK } from '../constants';
 import ImpactIcon from './ImpactIcon';
 
 interface DistributionTableProps {
-    data: DoctrinePattern[];
+    data: DoctrinePrinciple[];
 }
 
 const DistributionTable: React.FC<DistributionTableProps> = ({ data }) => {
@@ -51,7 +51,7 @@ const DistributionTable: React.FC<DistributionTableProps> = ({ data }) => {
                                 </th>);
                             })}
                             <th scope="col" className="px-3 py-3 text-center text-xs font-semibold text-gray-700 uppercase tracking-wider bg-gray-100">
-                                Total Patterns
+                                Total Principles
                             </th>
                         </tr>
                     </thead>

@@ -29,7 +29,7 @@ const Filters: React.FC<FiltersProps> = ({ currentPhase, currentScore, searchTer
 
     return (
         <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Explore the Doctrine Patterns</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Explore the Doctrine Principles</h2>
             
             <div className="space-y-6">
                  <div>

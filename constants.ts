@@ -1,11 +1,11 @@
-import { DoctrinePattern, Phase, Score } from './types';
+import { DoctrinePrinciple, Phase, Score } from './types';
 
-export const doctrineData: DoctrinePattern[] = [
+export const doctrineData: DoctrinePrinciple[] = [
     // Data extracted directly from the uploaded CSV file
     // Phase I - Stop Self Harm
         {
         "phase": "Phase I - Stop Self Harm",
-        "pattern": "Know your users",
+        "principle": "Know your users",
         "description": "Understand the needs of all stakeholders, including customers, shareholders, regulators, and staff.",
         "score": 3,
         "explanation": "AI eliminates the cost barrier to feature building, forcing management to focus intensely on which features to build. The risk is implementing the wrong user need at hyper-speed.",
@@ -13,7 +13,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase I - Stop Self Harm",
-        "pattern": "Challenge assumptions",
+        "principle": "Challenge assumptions",
         "description": "Actively question existing beliefs, practices, and underlying assumptions.",
         "score": 5,
         "explanation": "The cost of building and testing a strategic hypothesis (technical or business) drops to near zero, making failure of imagination (not challenging assumptions) the new bottleneck to strategic growth.",
@@ -21,7 +21,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase I - Stop Self Harm",
-        "pattern": "Use appropriate methods",
+        "principle": "Use appropriate methods",
         "description": "Apply suitable tools and techniques (e.g., agile, lean, Six Sigma) that fit the specific context.",
         "score": 5,
         "explanation": "AI makes the execution of all methods (Agile, TDD, Waterfall) hyper-efficient. The strategic challenge is ensuring teams select the right method for the component's context, as the wrong method quickly creates massive, well-coded waste.",
@@ -29,7 +29,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase I - Stop Self Harm",
-        "pattern": "Use a systematic mechanism of learning",
+        "principle": "Use a systematic mechanism of learning",
         "description": "Implement processes for continuous organizational learning, often with a bias towards data and evidence.",
         "score": 4,
         "explanation": "AI collapses the OODA loop (Observe-Orient-Decide-Act) by providing instant, continuous feedback from code generation. The strategic challenge is preventing the organization from being outrun by continuous, automated deployment.",
@@ -37,7 +37,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase I - Stop Self Harm",
-        "pattern": "Focus on user needs",
+        "principle": "Focus on user needs",
         "description": "Prioritize understanding and addressing the fundamental requirements and problems of the users.",
         "score": 3,
         "explanation": "With development speed decoupled from cost, management must become extremely disciplined about value delivery vs. feature output. The risk is drowning the customer in irrelevant, quickly-built software.",
@@ -45,7 +45,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase I - Stop Self Harm",
-        "pattern": "Focus on high situational awareness",
+        "principle": "Focus on high situational awareness",
         "description": "Maintain a clear understanding of the current environment and all factors being considered.",
         "score": 4,
         "explanation": "AI removes technical opacity (the \"black box\" of legacy code), enabling management to have perfect, instant insight into the health and complexity of the entire codebase, forcing attention onto strategic/market awareness.",
@@ -53,7 +53,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase I - Stop Self Harm",
-        "pattern": "Remove bias and duplication",
+        "principle": "Remove bias and duplication",
         "description": "Eliminate redundant efforts, subjective prejudices, and unnecessary complexity.",
         "score": 5,
         "explanation": "The managerial opportunity is to achieve instant, massive-scale standardization and cost reduction by using AI to enforce a single, optimal \"write once\" pattern across the entire organization.",
@@ -61,7 +61,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase I - Stop Self Harm",
-        "pattern": "Use a common language",
+        "principle": "Use a common language",
         "description": "Establish a shared vocabulary and understanding to improve communication and collaboration.",
         "score": 3,
         "explanation": "AI ensures technical consistency, but the strategic value is ensuring the business domain language (product definitions, core concepts) is perfectly and instantly reflected in the AI-generated code.",
@@ -69,7 +69,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase I - Stop Self Harm",
-        "pattern": "Think small (as in know the details)",
+        "principle": "Think small (as in know the details)",
         "description": "Understand the granular aspects, specific details, and intricacies of operations.",
         "score": 3,
         "explanation": "Management is now accountable for the details because AI removes the previous excuse of \"complexity\" or \"legacy code.\" Strategic decisions must be informed by instant, perfect granular detail.",
@@ -77,7 +77,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase II - Becoming More Context Aware",
-        "pattern": "Be transparent",
+        "principle": "Be transparent",
         "description": "Maintain openness in operations, processes, and decision-making, with a bias towards sharing information.",
         "score": 4,
         "explanation": "AI inherently forces transparency by logging every prompt and code choice. The strategic challenge is using this granular data to achieve radical transparency in why decisions were made (human + AI logic).",
@@ -85,7 +85,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase II - Becoming More Context Aware",
-        "pattern": "Focus on the outcome, not a contract",
+        "principle": "Focus on the outcome, not a contract",
         "description": "Prioritize achieving valuable results and impacts over strict adherence to formal agreements or contractual terms.",
         "score": 5,
         "explanation": "AI can fulfill technical contract specifics (specs) instantly. Management's strategic value shifts entirely to defining and validating the business outcome (value delivered), making contract adherence a low-value activity.",
@@ -93,7 +93,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase II - Becoming More Context Aware",
-        "pattern": "Think aptitude and attitude",
+        "principle": "Think aptitude and attitude",
         "description": "Emphasize the skills, capabilities, and mindset of individuals and teams.",
         "score": 3,
         "explanation": "Technical aptitude (coding skill) is heavily augmented by AI. Strategic focus shifts to attitude: curiosity, problem-framing, and critical thinking (i.e., prompt engineering aptitude).",
@@ -101,7 +101,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase II - Becoming More Context Aware",
-        "pattern": "Strategy is iterative, not linear",
+        "principle": "Strategy is iterative, not linear",
         "description": "Recognize that strategy evolves through rapid, reactive cycles and continuous adaptation, rather than a fixed, predetermined path.",
         "score": 5,
         "explanation": "The development cycle is so fast that strategy must be constantly and instantly adjusted based on market feedback from rapid deployment. Linear planning is now guaranteed failure.",
@@ -109,7 +109,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase II - Becoming More Context Aware",
-        "pattern": "Move fast",
+        "principle": "Move fast",
         "description": "Prioritize timely execution; an imperfect plan executed today is often better than a perfect plan delayed until tomorrow.",
         "score": 4,
         "explanation": "AI makes moving fast the default, not an aspiration. The strategic danger is building the wrong thing quickly. The doctrine shifts from speed being a choice to speed being a necessity.",
@@ -117,15 +117,15 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase II - Becoming More Context Aware",
-        "pattern": "Use appropriate tools",
+        "principle": "Use appropriate tools",
         "description": "Select and apply tools and techniques that are suitable for the specific context, such as mapping or financial models.",
         "score": 3,
         "explanation": "AI eliminates the technical friction of learning new tools. The choice of tool becomes a purely strategic choice regarding vendor lock-in, data sovereignty, and security, decoupled from effort/training cost.",
-        "recommendation": "Optimize Technology Footprint: Focus management effort on minimizing the number of distinct technologies and maximizing the AI's mastery over a small, strategically chosen, optimized stack."
+        "recommendation": "Develop a Strategic Tooling Framework: Shift from technical to strategic evaluation. With AI lowering the adoption cost of any tool, your decision framework must prioritize non-technical factors like vendor lock-in, data sovereignty, security posture, and total cost of ownership. The key question moves from ‘Can we use this tool?’ to ‘Should we commit to this tool?’"
         },
         {
         "phase": "Phase II - Becoming More Context Aware",
-        "pattern": "Think small (as in teams)",
+        "principle": "Think small (as in teams)",
         "description": "Advocate for smaller, more focused, and agile teams to enhance responsiveness and efficiency.",
         "score": 4,
         "explanation": "AI dramatically increases the output of a single developer, making ultra-small teams (or individuals) capable of managing massive scope. The challenge is coordination across many small units.",
@@ -133,7 +133,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase II - Becoming More Context Aware",
-        "pattern": "A bias towards action",
+        "principle": "A bias towards action",
         "description": "Favor learning by doing, experimenting, and playing the game rather than prolonged planning.",
         "score": 5,
         "explanation": "With AI, the cost of 'Action' is minimized. The strategic focus must shift from overcoming inertia to intelligently managing the risk associated with constant, autonomous action.",
@@ -141,7 +141,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase II - Becoming More Context Aware",
-        "pattern": "Be pragmatic",
+        "principle": "Be pragmatic",
         "description": "Focus on what works effectively to achieve goals, regardless of ideological purity or specific methods.",
         "score": 3,
         "explanation": "AI delivers pragmatic solutions instantly. The managerial challenge is ensuring that this immediate pragmatism does not obscure the need for long-term strategic elegance or architecture.",
@@ -149,7 +149,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase II - Becoming More Context Aware",
-        "pattern": "Manage Inertia",
+        "principle": "Manage Inertia",
         "description": "Actively address resistance to change stemming from existing practices, political capital, or past investments.",
         "score": 5,
         "explanation": "The primary source of organizational inertia shifts from technical debt/legacy code (which AI can resolve) to political capital and vested interests in old processes/structures that AI renders obsolete.",
@@ -157,7 +157,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase II - Becoming More Context Aware",
-        "pattern": "Use standards where appropriate",
+        "principle": "Use standards where appropriate",
         "description": "Apply established standards selectively where they add genuine value and simplify processes.",
         "score": 3,
         "explanation": "AI is the ultimate standardizer. The managerial challenge is defining the minimal, necessary standards (security, governance, naming conventions) that the AI must enforce across all codebases.",
@@ -165,7 +165,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase II - Becoming More Context Aware",
-        "pattern": "Distribute power and decision making",
+        "principle": "Distribute power and decision making",
         "description": "Empower individuals and teams to make decisions closer to the work, fostering autonomy and responsiveness.",
         "score": 4,
         "explanation": "Velocity demands that decision-making happen at the point of action (the prompt). Managers must decentralize power to the prompt engineers and the teams closest to the AI execution.",
@@ -173,7 +173,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase II - Becoming More Context Aware",
-        "pattern": "Think Fast, Inexpensive, Restrained, and Elegant (FIRE)",
+        "principle": "Think Fast, Inexpensive, Restrained, and Elegant (FIRE)",
         "description": "Design solutions that are quick to implement, cost-effective, constrained in scope, and refined in their execution.",
         "score": 4,
         "explanation": "AI inherently delivers Fast, Inexpensive, and Restrained code. The managerial focus shifts entirely to ensuring the generated solution is Elegant (high quality, maintainable, strategically fit).",
@@ -181,7 +181,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase II - Becoming More Context Aware",
-        "pattern": "Effectiveness over efficiency",
+        "principle": "Effectiveness over efficiency",
         "description": "Prioritize achieving desired results and solving the right problems over merely optimizing resource usage.",
         "score": 5,
         "explanation": "AI handles execution efficiency. Management's entire focus must shift to effectiveness, ensuring the team is applying the AI's enormous speed to the problems that deliver the highest strategic value.",
@@ -189,7 +189,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase II - Becoming More Context Aware",
-        "pattern": "Manage failure",
+        "principle": "Manage failure",
         "description": "Learn from and constructively address setbacks and mistakes as opportunities for improvement.",
         "score": 4,
         "explanation": "Failure becomes constant, small, and fast. The strategic necessity is to shift the organization's tolerance for failure from \"punishment\" to \"cheap, critical learning.\"",
@@ -197,7 +197,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase III - Better for Less",
-        "pattern": "Provide purpose, mastery & autonomy",
+        "principle": "Provide purpose, mastery & autonomy",
         "description": "Empower individuals by giving them a clear reason for their work, opportunities to excel, and control over how they achieve their goals.",
         "score": 5,
         "explanation": "AI provides near-total autonomy over code execution. Management must now strategically define the high-level purpose and redefine mastery away from coding to strategic thinking and advanced prompt engineering.",
@@ -205,7 +205,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase III - Better for Less",
-        "pattern": "Do better with less",
+        "principle": "Do better with less",
         "description": "Strive for improved outcomes and greater value while utilizing fewer resources.",
         "score": 4,
         "explanation": "AI is the ultimate tool for \"Better with Less,\" delivering immense value (code) with minimal direct human resource cost. The managerial focus shifts from resource reduction to maximizing strategic leverage of the AI.",
@@ -213,7 +213,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase III - Better for Less",
-        "pattern": "Be the owner",
+        "principle": "Be the owner",
         "description": "Take responsibility and accountability for actions, decisions, and their resulting outcomes.",
         "score": 4,
         "explanation": "When failure occurs, accountability must be clearly assigned, even if the primary generator of the code was an AI. The prompt engineer or the reviewing manager is the final owner, not the tool.",
@@ -221,7 +221,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase III - Better for Less",
-        "pattern": "Set exceptional standards",
+        "principle": "Set exceptional standards",
         "description": "Aim for excellence that goes beyond mere adequacy, recognizing that \"great is just not good enough.\"",
         "score": 5,
         "explanation": "AI makes \"good enough\" (adequate code) the default baseline. Management must raise standards to exceptional (optimal, secure, elegant, highly documented) to differentiate strategic output.",
@@ -229,7 +229,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase III - Better for Less",
-        "pattern": "Optimise Flow",
+        "principle": "Optimise Flow",
         "description": "Identify and remove bottlenecks in processes and workflows to improve the smooth and continuous progression of work.",
         "score": 4,
         "explanation": "Coding is no longer the bottleneck; the constraint shifts to human tasks: strategic prioritization, governance, and organizational politics. Management must aggressively simplify these human gates.",
@@ -237,7 +237,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase III - Better for Less",
-        "pattern": "Strategy is complex",
+        "principle": "Strategy is complex",
         "description": "Acknowledge the inherent uncertainty, interconnectedness, and non-linear dynamics in strategic planning and execution.",
         "score": 5,
         "explanation": "AI generates solutions quickly, but the managerial challenge of connecting these solutions to a complex, evolving market landscape remains a human task of synthesis and judgment.",
@@ -245,7 +245,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase III - Better for Less",
-        "pattern": "Commit to the direction, be adaptive along the path",
+        "principle": "Commit to the direction, be adaptive along the path",
         "description": "Maintain a clear overall objective and strategic intent while remaining flexible and responsive in how to achieve it.",
         "score": 5,
         "explanation": "AI-accelerated execution creates the ultimate adaptive path. Management must provide an ironclad Commitment to Direction (the North Star) to prevent high-velocity teams from wandering into irrelevant but easy-to-build solutions.",
@@ -253,7 +253,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase III - Better for Less",
-        "pattern": "A bias towards the new",
+        "principle": "A bias towards the new",
         "description": "Foster curiosity, encourage experimentation, and embrace appropriate risks with novel approaches and innovations.",
         "score": 5,
         "explanation": "AI removes the risk of technical failure from experimentation, making the bias towards the new economically sensible. Management must actively foster the cultural willingness to embrace non-traditional approaches.",
@@ -261,7 +261,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase III - Better for Less",
-        "pattern": "Be humble",
+        "principle": "Be humble",
         "description": "Practice active listening, selflessness, and demonstrate fortitude in the face of challenges.",
         "score": 3,
         "explanation": "AI challenges the organizational hierarchy based on \"who knows the code best,\" requiring managers to be humble enough to trust AI's analysis over long-held expert opinions.",
@@ -269,7 +269,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase III - Better for Less",
-        "pattern": "Think Big",
+        "principle": "Think Big",
         "description": "Inspire others with a broad vision, consider large-scale implications, and provide clear strategic direction.",
         "score": 4,
         "explanation": "AI accelerates the ability to build visionary concepts (e.g., entirely new business models) that were previously technically infeasible. The strategic vision must now be exponentially more ambitious.",
@@ -277,7 +277,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase III - Better for Less",
-        "pattern": "Seek the best",
+        "principle": "Seek the best",
         "description": "Continuously pursue optimal solutions, practices, and talent, striving for improvement in all areas.",
         "score": 4,
         "explanation": "The competitive advantage shifts from having the best coders to having the best AI training data and the best prompt engineers who can elicit the \"best\" strategic solutions.",
@@ -285,7 +285,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase IV - Continuously Evolving",
-        "pattern": "Exploit the landscape",
+        "principle": "Exploit the landscape",
         "description": "Leverage the current environment, its characteristics, and competitive dynamics for strategic advantage.",
         "score": 5,
         "explanation": "The competitive landscape now moves at AI speed. The strategic advantage shifts from anticipating change to the organizational capacity to instantly exploit new technical opportunities (e.g., a new cloud service or API).",
@@ -293,7 +293,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase IV - Continuously Evolving",
-        "pattern": "Design for constant evolution",
+        "principle": "Design for constant evolution",
         "description": "Build systems, organizations, and processes with continuous adaptation and change as a fundamental design principle.",
         "score": 5,
         "explanation": "AI ensures constant technical evolution (code changes). Management must design the organizational structure and compliance framework (the human processes) to be equally liquid and adaptable to prevent human inertia from throttling the AI's speed.",
@@ -301,7 +301,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase IV - Continuously Evolving",
-        "pattern": "There is no core",
+        "principle": "There is no core",
         "description": "Recognize that all elements, even seemingly central ones, are transient and subject to change; nothing is permanently fixed.",
         "score": 5,
         "explanation": "AI can rapidly rewrite or replace any \"core\" component overnight. The strategic danger is clinging to systems or architectures because of historical investment or belief, rather than their current functional value.",
@@ -309,7 +309,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase IV - Continuously Evolving",
-        "pattern": "Listen to your ecosystems",
+        "principle": "Listen to your ecosystems",
         "description": "Actively monitor and learn from external environments, customers, partners, and communities, treating them as sources of future insights and sensing engines.",
         "score": 4,
         "explanation": "When technical capacity is unlimited, the critical input is not how to build but what to build. Ecosystem listening becomes the primary strategic function, feeding high-value prompts to the AI engine.",
@@ -317,7 +317,7 @@ export const doctrineData: DoctrinePattern[] = [
         },
         {
         "phase": "Phase IV - Continuously Evolving",
-        "pattern": "There is no one culture",
+        "principle": "There is no one culture",
         "description": "Understand that different stages of evolution (e.g., explorers, villagers, town planners) require diverse cultural approaches and mindsets.",
         "score": 4,
         "explanation": "AI blurs the lines between explorer, villager, and town planner. Management must intentionally maintain cultural pockets that foster exploration alongside those focused on governance (town planning).",
@@ -384,7 +384,7 @@ export const PHASES: Phase[] = [
 
 export const SCORES_TO_TRACK: Score[] = [3, 4, 5];
 
-export const patternIcons: Record<string, string> = {
+export const principleIcons: Record<string, string> = {
     "Know your users": "👥",
     "Challenge assumptions": "🤔",
     "Use appropriate methods": "🛠️",

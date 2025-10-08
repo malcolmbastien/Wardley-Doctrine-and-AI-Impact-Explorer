@@ -1,13 +1,13 @@
 
 import React, { useState, useMemo } from 'react';
 import { doctrineData, PHASES, phaseShortNames } from './constants';
-import { DoctrinePattern, Phase, Score } from './types';
+import { DoctrinePrinciple, Phase, Score } from './types';
 import Header from './components/Header';
 import Onboarding from './components/Onboarding';
 import DistributionTable from './components/DistributionTable';
 import FocusLevelDescriptions from './components/FocusLevelDescriptions';
 import Filters from './components/Filters';
-import PatternCard from './components/PatternCard';
+import PrincipleCard from './components/PatternCard';
 
 const App: React.FC = () => {
     const [phaseFilter, setPhaseFilter] = useState<Phase | 'All'>('All');
@@ -28,7 +28,7 @@ const App: React.FC = () => {
 
         if (lowercasedSearchTerm) {
             data = data.filter(item => 
-                item.pattern.toLowerCase().includes(lowercasedSearchTerm) ||
+                item.principle.toLowerCase().includes(lowercasedSearchTerm) ||
                 item.description.toLowerCase().includes(lowercasedSearchTerm)
             );
         }
@@ -53,11 +53,11 @@ const App: React.FC = () => {
                         onSearchChange={setSearchTerm}
                     />
                     
-                    <div id="patterns-container" className="space-y-12">
+                    <div id="principles-container" className="space-y-12">
                        {filteredData.length > 0 ? (
                             PHASES.map(phase => {
-                                const patternsInPhase = filteredData.filter(p => p.phase === phase);
-                                if (patternsInPhase.length === 0) {
+                                const principlesInPhase = filteredData.filter(p => p.phase === phase);
+                                if (principlesInPhase.length === 0) {
                                     return null;
                                 }
                                 return (
@@ -66,8 +66,8 @@ const App: React.FC = () => {
                                             {phaseShortNames[phase]}
                                         </h2>
                                         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                                            {patternsInPhase.map((pattern, index) => (
-                                                <PatternCard key={`${pattern.pattern}-${index}`} pattern={pattern} />
+                                            {principlesInPhase.map((principle, index) => (
+                                                <PrincipleCard key={`${principle.principle}-${index}`} principle={principle} />
                                             ))}
                                         </div>
                                     </section>
@@ -75,7 +75,7 @@ const App: React.FC = () => {
                             })
                        ) : (
                         <div className="p-8 text-center text-gray-500 bg-gray-50 rounded-lg">
-                            No patterns match the selected filters. Please adjust the Phase or Strategic Focus Level filters.
+                            No principles match the selected filters. Please adjust the Phase or Strategic Focus Level filters.
                         </div>
                        )}
                     </div>

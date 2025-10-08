@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Onboarding: React.FC = () => {
@@ -22,7 +21,7 @@ const Onboarding: React.FC = () => {
                              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2zM13 10a1 1 0 011-1h6a1 1 0 011 1v2a1 1 0 01-1 1h-6a1 1 0 01-1-1v-2z" /></svg>
                         </div>
                         <h3 className="font-semibold text-gray-700">2. Filter Your Focus</h3>
-                        <p className="text-sm text-gray-600 mt-1">Use the filters to isolate patterns by a specific Phase or Strategic Focus Level (e.g., 'Cultural Pivots').</p>
+                        <p className="text-sm text-gray-600 mt-1">Use the filters to isolate principles by a specific Phase or Strategic Focus Level (e.g., 'Cultural Pivots').</p>
                     </div>
                     {/* Step 3 */}
                     <div className="flex flex-col items-center">
@@ -30,7 +29,7 @@ const Onboarding: React.FC = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" /></svg>
                         </div>
                         <h3 className="font-semibold text-gray-700">3. Dive into the Details</h3>
-                        <p className="text-sm text-gray-600 mt-1">Click on any pattern card below to reveal a detailed analysis of AI's impact and our recommendations for managers.</p>
+                        <p className="text-sm text-gray-600 mt-1">Read the principle cards to find a detailed analysis of AI's impact and actionable recommendations for managers.</p>
                     </div>
                 </div>
             </div>

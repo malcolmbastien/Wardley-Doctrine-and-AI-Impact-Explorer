@@ -7,9 +7,9 @@ export type Phase =
 
 export type Score = 3 | 4 | 5;
 
-export interface DoctrinePattern {
+export interface DoctrinePrinciple {
     phase: Phase;
-    pattern: string;
+    principle: string;
     description: string;
     score: Score;
     explanation: string;
